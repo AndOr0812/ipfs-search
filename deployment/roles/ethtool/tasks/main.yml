@@ -1,0 +1,5 @@
+---
+- command: ethtool -K {{ eth_interface }} tx-tcp6-segmentation off
+- command: ethtool -K {{ eth_interface }} tx-tcp-segmentation off
+- command: ethtool -K {{ eth_interface }} gso off
+- command: ethtool -K {{ eth_interface }} gro off
